@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+header {
+    width: 100%;
+}
+
+.header-content-container {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: black;
+}
+
+
+/* ============================= */
+/* Header Top Section */
+/* ============================= */
+
+
+.header-top {
+    width: 100%;
+    background-color: #FAFAFA;
+    box-shadow: inset 0 -1px 1px 1px rgba(0,0,0, .2);
+}
+
+.header-top-menus {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 45%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    padding: .5rem;
+    position: relative;
+    transition: all ease .3s;
+}
+
+i {
+    padding: 0 .3rem;
+}
+
+.menu .fa-long-arrow-alt-down {
+    color: red;
+}
+
+.share-percentage-move {
+    color: red;
+    font-size: .9rem;
+    padding: .1rem;
+}
+
+.menu-top-brands-dropdown {
+    position: absolute;
+    top: 25px;
+    display: none;
+    background-color: #fff;
+    box-shadow: -1px -1px -2px 0 #fff;
+    z-index: 200;
+}
+
+.menu li:hover .menu-top-brands-dropdown {
+    display: block;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+.menu li:hover a {
+    color: #000;
+}
+
+.menu-top-brands-dropdown img {
+    border: none;
+    height: 50px;
+    padding-right: 5px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .2);
+    padding: .4rem;
+}
+
+.menu img:hover {
+    padding: .38rem;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, .3);
+}
+
+
+/* ============================= */
+/* Header Mid Section */
+/* ============================= */
+
+.header-mid-menus {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo-search-nav-container {
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    padding: 0 1rem;
+    width: 25%;
+    background-color: maroon;
+}
+
+.logo img {
+    padding: 1.5rem;
+}
+
+.search-nav-container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.search input {
+    width: 100%;
+    display: block;
+    margin: 1rem auto;
+    padding: .4rem;
+}
+
+.nav {
+    width: 90%;
+    border-radius: 4px;
+}
+
+.nav > ul > li {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav > ul > li {
+    padding: .7rem 1rem;
+}
+
+.nav > ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav > ul > li:hover .mega-dropdown-menu-container {
+    display: block;
+}
+
+.mega-dropdown-menu-container {
+    display: none;
+}
+
+.mega-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    z-index: 100;
+    background-color: #eee;
+    width: 100%;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .8);
+}
+
+.mega-dropdown li {
+    padding: .3rem 
+}
+
+.dropdown-category {
+    padding: 1rem;
+    width: 25%;
+}
+
+.dropdown-category h4 {
+    color: maroon;
+    padding: .5rem;
+    text-align: center;
+}
+
+
+
+/* ============================= */
+/* Header Bottom Section */
+/* ============================= */
+
+
+.header-bottom-container {
+    width: 100%;
+    padding: .5rem 0;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, .2);
+    margin: .4rem 0;
+}
+
+.header-bottom-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-bottom-content p {
+    font-size: .8rem;
+}
+
+
+/* ============================= */
+/* Main Content Section */
+/* ============================= */
+
+main {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.socials-page-content-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.socials {
+    position: fixed;
+    width: 5%;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials a {
+    display: block;
+    margin: .5rem;
+}
+
+.page-content-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image-slider-container {
+    position: relative;
+}
+
+.image-slider-caption {
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.image-slider-caption button {
+    color: #fff;
+    padding: .5rem;
+    border-radius: 4px;
+    background-color: maroon;
+    font-size: 1rem;
+}
+
+.image-slider-caption > * {
+    margin: 5px;
+}
+
+.image-slider img {
+    width: 100%;
+    padding: .5rem;
+}
